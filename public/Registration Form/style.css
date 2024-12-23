@@ -1,0 +1,49 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+/* ------------------------------HEADER-------------------------------- */
+header{
+    height: 12vh;
+    /* border: 2px solid red; */
+}
+header nav{
+    background: rgb(47, 47, 236);
+    height: 12vh;
+}
+header nav .container-fluid a{
+    color: white;
+    font-size: 1.75rem;
+    font-family: "lucida calligraphy";
+}
+/* ---------------------------------MAIN------------------------------ */
+main{
+    /* border: 2px solid red; */
+}
+main .container{
+    /* border: 2px solid green; */
+    margin-top: 5vh;
+}
+main .container .email{
+    /* border: 2px solid blue; */
+    padding: 0 15vw;
+}
+main .container .email label{
+    font-size: 1.35rem;
+    /* padding: 0; */
+    margin: 0;
+    /* border: 2px solid red; */
+}
+main .container .email .inputBox{
+    border-bottom: 2px solid #cccccc;
+    /* border-radius: 5px; */
+    /* border: 2px solid blue; */
+}
+
+main .container .email .inputBox input{
+    border: none;
+    box-shadow: none;
+    padding: 0;
+
+}
+

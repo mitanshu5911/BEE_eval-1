@@ -1,16 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css" type="text/css">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-regular.css">
+    <style>
+    </style>
+    <title>Home Page</title>
 </head>
-<body>
 
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, consequatur qui voluptatum tenetur distinctio officiis vero accusantium tempore aliquid praesentium fugiat asperiores nostrum voluptate? Placeat veniam, adipisci repellendus, enim at cum quo mollitia beatae eligendi, sit quod accusantium? Libero minus aspernatur asperiores nostrum doloribus iste doloremque itaque maxime, explicabo voluptate modi et repellendus delectus possimus vero molestias illum eos dolorum, placeat architecto suscipit! Rem non consequatur illo commodi quaerat quae ut repellat nisi reiciendis, vero voluptatem sit aperiam cupiditate. Eaque quas, culpa dolorem facilis aliquam mollitia ab alias blanditiis eligendi minima maiores perspiciatis, saepe ea a fuga quod cum veniam sapiente omnis possimus voluptatibus aut. Voluptate sit quod velit ad praesentium ea nihil reiciendis aperiam, rerum non repellat voluptas iusto similique eos quidem recusandae facilis aut officiis autem enim unde. Et quod hic sequi distinctio perspiciatis quibusdam laborum iusto, cum perferendis impedit voluptas dignissimos atque magni sit facere. Facilis tenetur sapiente, impedit dolores nulla voluptas. Pariatur itaque facere inventore eaque fuga delectus! Nulla aut minus qui ipsa quasi quaerat earum dolore. Omnis totam autem exercitationem ullam sed nulla dolorum architecto ducimus corrupti quo fuga rerum voluptatem aperiam dolores pariatur dolore, repudiandae ipsum? Earum aliquid dolores quod nesciunt sit, iusto consequuntur similique ratione doloribus laudantium culpa pariatur quibusdam molestias incidunt explicabo ut saepe deleniti minima. Enim nihil cum, a necessitatibus eveniet repudiandae, non eius nulla animi accusamus magni dicta eaque hic quo eos, laboriosam nobis modi labore earum quidem ex asperiores similique! Vero perferendis aspernatur cupiditate quisquam, sapiente sit omnis, beatae perspiciatis ipsa dicta vitae hic odio sed id aut voluptatum dolorem totam minus accusantium! Distinctio recusandae exercitationem consequatur natus, numquam nobis. Minus voluptas molestias non? Esse pariatur nihil corrupti iusto, perferendis recusandae blanditiis facilis velit similique veniam cumque quia laborum repellendus. Voluptatem voluptates, accusantium impedit nihil numquam tempore nemo et!</p>
-    <a href="registrationForm">Registration Form</a>
-    <a href="getAllStudents">All Students Details</a>
+<body>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 d-flex justify-content-center mt-4 mb-4"><a href="registrationForm" class="btn btn-primary">Registration Form</a></div>
+                <div class="col-md-6 col-sm-12 d-flex justify-content-center mt-4 mb-4">  <a href="getAllStudents" class="btn btn-primary" id="getDetails">Get Students Details</a></div>
+
+            </div>
+        </div>
+
+        <div class="container mt-5" id="cardsContainer">
+            <div class="row">
+                {{%content%}}             
+            </div>            
+        </div>
+    </main>
+
+   
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+        
+        
 </body>
-<script src="./script.js"></script>
+
 </html>

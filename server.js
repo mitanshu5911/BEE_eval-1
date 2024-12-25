@@ -4,6 +4,18 @@ const path = require("path");
 
 const HomePage = fs.readFileSync('./public/index.html', "utf-8");
 const registrationFormPage = fs.readFileSync('./public/Registration Form/index.html');
+const studentCardHtml= fs.readFileSync('./public/studentCard.html',"utf-8");
+
+const getStudentCardDetails = () => {
+    const studentsFile = JSON.parse(fs.readFileSync('./users.json', "utf-8"));
+    return studentsFile.map((student) => {
+        let output = studentCardHtml.replace('{{%Name%}}', student.name);
+        output = output.replace('{{%DOB%}}', student.dob);
+        output = output.replace('{{%CITY%}}', student.city);
+        output = output.replace('{{%MOBILENO%}}', student.mobile);
+        return output;
+    });
+};
 
 const server = http.createServer((req,resp) => {
     let url = req.url;
@@ -11,7 +23,7 @@ const server = http.createServer((req,resp) => {
 
     if(url==="/" || url.toLowerCase()==="/home"){
         resp.writeHead(200, { "Content-Type": "text/html" });
-        resp.end(HomePage);
+        resp.end(HomePage.replace('{{%content%}}',""));
     }
     else if(url==="/registrationForm"){
         resp.writeHead(200, { "Content-Type": "text/html" });
@@ -60,12 +72,19 @@ const server = http.createServer((req,resp) => {
             })
         });
     }
+    else if(url==="/getAllStudents" && method==='GET'){
+        const studentCardDetails = getStudentCardDetails();
+        let studentresponseHtml = HomePage.replace('{{%content%}}', studentCardDetails.join(''));
+        resp.writeHead(200, { 'Content-Type': 'text/html' });
+        resp.end(studentresponseHtml);
+        console.log("Details fetched successfully");
+    }
     else{
         resp.writeHead(404, { "Content-Type": "text/plain" });
         resp.end("Page not found");
     }
 });
 
-server.listen(3000,'127.0.0.1', () =>{
+server.listen(3001,'127.0.0.1', () =>{
     console.log('Server has Started!!!!!');
 });

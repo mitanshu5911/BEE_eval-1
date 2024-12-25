@@ -22,5 +22,41 @@
     "city": "bathinda",
     "course": "BE CSe",
     "otherInfo": "hello"
+  },
+  {
+    "email": "Rumansingla@gmial.com",
+    "name": "Ruman singla",
+    "dob": "2024-12-17",
+    "gender": "none",
+    "mobile": "",
+    "address": "",
+    "zipcode": "",
+    "city": "",
+    "course": "",
+    "otherInfo": ""
+  },
+  {
+    "email": "dipanshubansal@gmail.com",
+    "name": "Mitanshu Bansal",
+    "dob": "2024-12-19",
+    "gender": "Male",
+    "mobile": "07009674256",
+    "address": "356, 13/1 raman punjaab",
+    "zipcode": "151301",
+    "city": "bathinda",
+    "course": "BE CSe",
+    "otherInfo": "dsava"
+  },
+  {
+    "email": "jitesh0535.be23@chitkara.edu.in",
+    "name": "Mitanshu Bansal",
+    "dob": "2024-12-12",
+    "gender": "none",
+    "mobile": "07009674256",
+    "address": "356, 13/1 raman punjaab",
+    "zipcode": "151301",
+    "city": "bathinda",
+    "course": "",
+    "otherInfo": ""
   }
 ]

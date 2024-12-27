@@ -58,5 +58,17 @@
     "city": "bathinda",
     "course": "",
     "otherInfo": ""
+  },
+  {
+    "email": "mitanshubansal1234@gmail.com",
+    "name": "Vikas Patel",
+    "dob": "2024-12-18",
+    "gender": "Male",
+    "mobile": "7009674256",
+    "address": "356, 13/1 raman punjaab",
+    "zipcode": "151301",
+    "city": "",
+    "course": "",
+    "otherInfo": ""
   }
 ]
